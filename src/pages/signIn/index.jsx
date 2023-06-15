@@ -23,7 +23,17 @@ function SignIn() {
       <TouchableOpacity style={styles.button}>
         <Text style={styles.button.text}>Submit</Text>
       </TouchableOpacity>
+<<<<<<< Updated upstream
       <Text style={styles.button.text}>계정이 없다면 클릭</Text>
+=======
+<<<<<<< HEAD
+      <TouchableOpacity>
+        <Text style={styles.button.text}>계정이 없다면 클릭!</Text>
+      </TouchableOpacity>
+=======
+      <Text style={styles.button.text}>계정이 없다면 클릭</Text>
+>>>>>>> #1_signIn
+>>>>>>> Stashed changes
     </ImageBackground>
   );
 }
@@ -36,12 +46,26 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     color: "#fff",
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+    marginTop: 200,
+=======
+>>>>>>> #1_signIn
+>>>>>>> Stashed changes
   },
   background: {
     width: "100%",
     height: "100%",
     alignItems: "center",
+<<<<<<< Updated upstream
     justifyContent: "center",
+=======
+<<<<<<< HEAD
+=======
+    justifyContent: "center",
+>>>>>>> #1_signIn
+>>>>>>> Stashed changes
   },
   idInput: {
     width: 280,
