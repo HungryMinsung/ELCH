@@ -1,5 +1,6 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { CustomHeader } from "../src/components/common/customHeader";
 
 import SignIn from "./pages/signIn";
 
@@ -9,7 +10,17 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="SignIn" component={SignIn} />
+        <Stack.Screen
+          // options={{ headerShown: false }}
+          options={{
+            headerTitleStyle: {
+              fontWeight: "bold",
+              fontSize: 25,
+            },
+          }}
+          name="ELCH"
+          component={SignIn}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
