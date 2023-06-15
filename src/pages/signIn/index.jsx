@@ -23,15 +23,9 @@ function SignIn() {
       <TouchableOpacity style={styles.button}>
         <Text style={styles.button.text}>Submit</Text>
       </TouchableOpacity>
-      <Text style={styles.button.text}>계정이 없다면 클릭</Text>
       <TouchableOpacity>
         <Text style={styles.button.text}>계정이 없다면 클릭!</Text>
       </TouchableOpacity>
-      <Text style={styles.button.text}>계정이 없다면 클릭</Text>
-      <TouchableOpacity>
-        <Text style={styles.button.text}>계정이 없다면 클릭!</Text>
-      </TouchableOpacity>
-      <Text style={styles.button.text}>계정이 없다면 클릭</Text>
     </ImageBackground>
   );
 }
@@ -51,7 +45,6 @@ const styles = StyleSheet.create({
     width: "100%",
     height: "100%",
     alignItems: "center",
-    justifyContent: "center",
   },
   idInput: {
     width: 280,
