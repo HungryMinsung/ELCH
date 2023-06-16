@@ -1,35 +1,29 @@
 import {
-  StyleSheet,
-  View,
   Text,
+  View,
   ImageBackground,
+  StyleSheet,
   TextInput,
   TouchableOpacity,
 } from "react-native";
-import { BackGround } from "../../assets/index";
+import { BackGround } from "../../assets";
 
-function SignIn({ navigation }) {
+function SignUp() {
   return (
     <ImageBackground source={BackGround} style={styles.background}>
-      <Text style={styles.text}>Sign in</Text>
+      <Text style={styles.text}>Sign Up</Text>
+      <TextInput placeholder="ID" style={styles.textInput}></TextInput>
+      <TextInput placeholder="Password" style={styles.textInput}></TextInput>
       <TextInput
-        placeholder="ID를 입력해 주세요."
-        style={styles.idInput}
+        placeholder="Password check"
+        style={styles.textInput}
       ></TextInput>
       <TextInput
-        placeholder="비밀번호를 입력해 주세요."
-        style={styles.pwInput}
+        placeholder="Organization name"
+        style={styles.textInput}
       ></TextInput>
       <TouchableOpacity style={styles.button}>
         <Text style={styles.button.text}>Submit</Text>
-      </TouchableOpacity>
-      <TouchableOpacity>
-        <Text
-          onPress={() => navigation.navigate("회원가입")}
-          style={styles.button.text}
-        >
-          계정이 없다면 클릭!
-        </Text>
       </TouchableOpacity>
     </ImageBackground>
   );
@@ -43,29 +37,18 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     color: "#fff",
-    marginTop: 200,
-    marginTop: 200,
+    marginTop: 150,
   },
   background: {
     width: "100%",
     height: "100%",
     alignItems: "center",
   },
-  idInput: {
+  textInput: {
     width: 280,
     height: 50,
-    marginTop: 50,
+    marginTop: 30,
     backgroundColor: "#fff",
-    paddingHorizontal: 20,
-    fontSize: 15,
-    fontWeight: "bold",
-    borderRadius: 10,
-  },
-  pwInput: {
-    width: 280,
-    height: 50,
-    backgroundColor: "#fff",
-    marginTop: 40,
     paddingHorizontal: 20,
     fontSize: 15,
     fontWeight: "bold",
@@ -88,5 +71,4 @@ const styles = StyleSheet.create({
     },
   },
 });
-
-export default SignIn;
+export default SignUp;
