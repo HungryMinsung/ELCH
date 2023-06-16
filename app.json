@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "ELCH",
+    "slug": "ELCH",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/imgs/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./src/assets/imgs/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/imgs/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./src/assets/imgs/favicon.png"
+    }
+  }
+}
