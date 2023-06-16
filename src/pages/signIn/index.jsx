@@ -8,9 +8,9 @@ import {
 } from "react-native";
 import { BackGround } from "../../assets/index";
 
-function SignIn() {
+function SignIn({ navigation }) {
   return (
-    <ImageBackground style={styles.background} source={BackGround}>
+    <ImageBackground source={BackGround} style={styles.background}>
       <Text style={styles.text}>Sign in</Text>
       <TextInput
         placeholder="ID를 입력해 주세요."
@@ -24,7 +24,12 @@ function SignIn() {
         <Text style={styles.button.text}>Submit</Text>
       </TouchableOpacity>
       <TouchableOpacity>
-        <Text style={styles.button.text}>계정이 없다면 클릭!</Text>
+        <Text
+          onPress={() => navigation.navigate("회원가입")}
+          style={styles.button.text}
+        >
+          계정이 없다면 클릭!
+        </Text>
       </TouchableOpacity>
     </ImageBackground>
   );
