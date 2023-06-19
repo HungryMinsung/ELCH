@@ -1,16 +1,9 @@
-import {
-  Text,
-  View,
-  ImageBackground,
-  StyleSheet,
-  TextInput,
-  TouchableOpacity,
-} from "react-native";
-import BackGroundImg from "../../components/common/backGroundImg";
+import { Text, StyleSheet, TextInput, TouchableOpacity } from "react-native";
+import BackgroundImg from "../../components/common/backgroundImg";
 
 function SignUp() {
   return (
-    <BackGroundImg>
+    <BackgroundImg>
       <Text style={styles.text}>Sign Up</Text>
       <TextInput placeholder="ID" style={styles.textInput}></TextInput>
       <TextInput placeholder="Password" style={styles.textInput}></TextInput>
@@ -25,7 +18,7 @@ function SignUp() {
       <TouchableOpacity style={styles.button}>
         <Text style={styles.button.text}>Submit</Text>
       </TouchableOpacity>
-    </BackGroundImg>
+    </BackgroundImg>
   );
 }
 

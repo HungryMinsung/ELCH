@@ -1,16 +1,9 @@
-import {
-  StyleSheet,
-  View,
-  Text,
-  ImageBackground,
-  TextInput,
-  TouchableOpacity,
-} from "react-native";
-import BackGroundImg from "../../components/common/backGroundImg";
+import { StyleSheet, Text, TextInput, TouchableOpacity } from "react-native";
+import BackgroundImg from "../../components/common/backgroundImg";
 
 function SignIn({ navigation }) {
   return (
-    <BackGroundImg style={styles.background}>
+    <BackgroundImg>
       <Text style={styles.text}>Sign in</Text>
       <TextInput
         placeholder="ID를 입력해 주세요."
@@ -34,7 +27,7 @@ function SignIn({ navigation }) {
           계정이 없다면 클릭!
         </Text>
       </TouchableOpacity>
-    </BackGroundImg>
+    </BackgroundImg>
   );
 }
 
@@ -48,12 +41,6 @@ const styles = StyleSheet.create({
     color: "#fff",
     marginTop: 200,
     marginTop: 200,
-  },
-  background: {
-    width: "100%",
-    height: "100%",
-    alignItems: "center",
-    position: "absolute",
   },
   idInput: {
     width: 280,

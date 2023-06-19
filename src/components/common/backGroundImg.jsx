@@ -1,15 +1,12 @@
-import react from "react";
-import { ImageBackground, StyleSheet, Dimensions } from "react-native";
-import { BackGround } from "../../assets/index";
+import { ImageBackground, StyleSheet } from "react-native";
+import { Background } from "../../assets/index";
 
-const { width, height } = Dimensions.get("screen");
-
-function BackGroundImg({ children }) {
+function BackgroundImg({ children }) {
   return (
     <ImageBackground
       style={styles.container}
       resizeMode="cover"
-      source={BackGround}
+      source={Background}
     >
       {children}
     </ImageBackground>
@@ -18,11 +15,11 @@ function BackGroundImg({ children }) {
 
 const styles = StyleSheet.create({
   container: {
-    width,
-    height,
+    width: "100%",
+    height: "100%",
     alignItems: "center",
     position: "absolute",
   },
 });
 
-export default BackGroundImg;
+export default BackgroundImg;
