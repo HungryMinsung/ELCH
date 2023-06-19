@@ -1,16 +1,9 @@
-import {
-  Text,
-  View,
-  ImageBackground,
-  StyleSheet,
-  TextInput,
-  TouchableOpacity,
-} from "react-native";
-import { BackGround } from "../../assets";
+import { Text, StyleSheet, TextInput, TouchableOpacity } from "react-native";
+import BackgroundImg from "../../components/common/backgroundImg";
 
 function SignUp() {
   return (
-    <ImageBackground source={BackGround} style={styles.background}>
+    <BackgroundImg>
       <Text style={styles.text}>Sign Up</Text>
       <TextInput placeholder="ID" style={styles.textInput}></TextInput>
       <TextInput placeholder="Password" style={styles.textInput}></TextInput>
@@ -25,7 +18,7 @@ function SignUp() {
       <TouchableOpacity style={styles.button}>
         <Text style={styles.button.text}>Submit</Text>
       </TouchableOpacity>
-    </ImageBackground>
+    </BackgroundImg>
   );
 }
 
@@ -38,11 +31,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     color: "#fff",
     marginTop: 150,
-  },
-  background: {
-    width: "100%",
-    height: "100%",
-    alignItems: "center",
   },
   textInput: {
     width: 280,

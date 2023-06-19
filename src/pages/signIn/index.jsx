@@ -1,16 +1,9 @@
-import {
-  StyleSheet,
-  View,
-  Text,
-  ImageBackground,
-  TextInput,
-  TouchableOpacity,
-} from "react-native";
-import { BackGround } from "../../assets/index";
+import { StyleSheet, Text, TextInput, TouchableOpacity } from "react-native";
+import BackgroundImg from "../../components/common/backgroundImg";
 
 function SignIn({ navigation }) {
   return (
-    <ImageBackground source={BackGround} style={styles.background}>
+    <BackgroundImg>
       <Text style={styles.text}>Sign in</Text>
       <TextInput
         placeholder="ID를 입력해 주세요."
@@ -20,7 +13,10 @@ function SignIn({ navigation }) {
         placeholder="비밀번호를 입력해 주세요."
         style={styles.pwInput}
       ></TextInput>
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity
+        onPress={() => navigation.navigate("ELCH")}
+        style={styles.button}
+      >
         <Text style={styles.button.text}>Submit</Text>
       </TouchableOpacity>
       <TouchableOpacity>
@@ -31,7 +27,7 @@ function SignIn({ navigation }) {
           계정이 없다면 클릭!
         </Text>
       </TouchableOpacity>
-    </ImageBackground>
+    </BackgroundImg>
   );
 }
 
@@ -45,11 +41,6 @@ const styles = StyleSheet.create({
     color: "#fff",
     marginTop: 200,
     marginTop: 200,
-  },
-  background: {
-    width: "100%",
-    height: "100%",
-    alignItems: "center",
   },
   idInput: {
     width: 280,
